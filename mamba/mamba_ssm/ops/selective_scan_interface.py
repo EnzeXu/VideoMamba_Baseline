@@ -6,6 +6,10 @@ from torch.cuda.amp import custom_bwd, custom_fwd
 
 from einops import rearrange, repeat
 
+import sys
+sys.path.append('./')
+sys.path.append('./causal_conv1d/')
+
 from causal_conv1d import causal_conv1d_fn
 import causal_conv1d_cuda
 import selective_scan_cuda

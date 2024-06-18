@@ -8,7 +8,7 @@ from einops import rearrange, repeat
 
 import sys
 sys.path.append('./')
-sys.path.append('./causal_conv1d/')
+sys.path.append('./causal-conv1d/')
 
 sys.path.append('../../../mamba/')
 sys.path.append('../../../../VideoMamba/')
@@ -17,6 +17,7 @@ sys.path.append('../../../../VideoMamba/')
 sys.path.append('../../../causal-conv1d')
 
 from causal_conv1d import causal_conv1d_fn
+# from causal-conv1d.causal_conv1d import causal_conv1d_fn
 import causal_conv1d_cuda
 import selective_scan_cuda
 

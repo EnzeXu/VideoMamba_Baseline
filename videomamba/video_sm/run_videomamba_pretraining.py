@@ -188,14 +188,14 @@ def main(args):
 
     print(args)
 
-    # device = torch.device(args.device) # ENZE: cuda
+    device = torch.device(args.device) # ENZE: cuda
 
-    gpu_id = 2
-    use_cuda = torch.cuda.is_available()
-    if use_cuda:
-        device = torch.device('cuda', gpu_id)
-    else:
-        device = torch.device('cpu')
+    # gpu_id = 2
+    # use_cuda = torch.cuda.is_available()
+    # if use_cuda:
+    #     device = torch.device('cuda', gpu_id)
+    # else:
+    #     device = torch.device('cpu')
     print("using device:", device)
 
     # fix the seed for reproducibility

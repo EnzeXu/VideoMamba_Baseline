@@ -51,13 +51,13 @@ CPUS_PER_TASK=16
 #        --bf16
 python videomamba/video_sm/run_class_finetuning.py \
     --model videomamba_tiny \
-    --data_path ${DATA_PATH} \
-    --prefix ${PREFIX} \
+    --data_path datasets/data/new_k400/ \
+    --prefix datasets/k400/ \
     --data_set 'Kinetics_sparse' \
     --split ',' \
     --nb_classes 400 \
-    --log_dir ${OUTPUT_DIR} \
-    --output_dir ${OUTPUT_DIR} \
+    --log_dir log/  \
+    --output_dir output/  \
     --batch_size 64 \
     --num_sample 2 \
     --input_size 224 \

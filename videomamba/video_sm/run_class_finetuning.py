@@ -25,7 +25,9 @@ import contextlib
 from models import *
 
 import sys
-sys.path.append('mamba/')
+sys.path.append('../../mamba/')
+sys.path.append('../../../VideoMamba/')
+
 
 def get_args():
     parser = argparse.ArgumentParser('VideoMAE fine-tuning and evaluation script for video classification', add_help=False)

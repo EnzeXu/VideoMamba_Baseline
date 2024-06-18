@@ -18,6 +18,9 @@ from timm.models.vision_transformer import _load_weights
 
 import math
 
+import sys
+sys.path.append('mamba/')
+
 from mamba_ssm.modules.mamba_simple import Mamba
 
 try:

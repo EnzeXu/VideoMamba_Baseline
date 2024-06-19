@@ -190,7 +190,7 @@ def main(args):
 
     # device = torch.device(args.device) # ENZE: cuda
 
-    gpu_id = 2
+    gpu_id = 0
     use_cuda = torch.cuda.is_available()
     if use_cuda:
         device = torch.device('cuda', gpu_id)
